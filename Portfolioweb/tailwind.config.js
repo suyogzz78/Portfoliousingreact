@@ -9,7 +9,7 @@ export default {
       keyframes: {
         blob: {
           "0%, 100%": { transform: "translate(-50%, -50%) scale(1)" },
-          "33%": { transform: "translate(-50%, -50%) scale(1.2)" },
+          "33%": { transform: "translate(-50%, -50%) scale(1.4)" },
           "66%": { transform: "translate(-50%, -50%) scale(0.8)" },
         },
       },
