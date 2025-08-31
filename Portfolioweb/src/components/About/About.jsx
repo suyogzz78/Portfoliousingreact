@@ -58,8 +58,8 @@ function About() {
        <div className='md:w-1/2 flex justify-center md:justify-end'>
         <Tilt
           className='w-48 h-48 border-5 rounded-full md:h-[30rem] md:w-[30rem] sm:w-64 sm:h-64 border-blue-700'  
-          tiltMaxAngleX={15}
-          tiltMaxAngleY={15}
+          tiltMaxAngleX={25}
+          tiltMaxAngleY={25}
           perspective={1000}
           scale={1.1}
           transitionSpeed={1000}
@@ -68,7 +68,7 @@ function About() {
           <img 
             src={profile1}
             alt='Suyog Gautam'
-            className='w-full h-full object-cover  rounded-full drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
+            className='w-full h-full object-cover  rounded-full drop-shadow-[0_10px_20px_rgba(65,105,225,0.5)]'
           />
         </Tilt>
       </div>
