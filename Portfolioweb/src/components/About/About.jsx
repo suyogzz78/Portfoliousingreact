@@ -57,7 +57,7 @@ function About() {
         <div className='md:w-1/2 flex justify-center md:justify-end'>
        <div className='md:w-1/2 flex justify-center md:justify-end'>
         <Tilt
-          className='w-48 h-48 border-5 rounded-full md:h-[30rem] md:w-[30rem] sm:w-64 sm:h-64 border-blue-700'  
+          className='w-48 h-48 border-5  md:h-[30rem] md:w-[30rem] sm:w-64 sm:h-64 border-blue-700'  
           tiltMaxAngleX={25}
           tiltMaxAngleY={25}
           perspective={1000}
@@ -80,5 +80,6 @@ function About() {
     </section>
   )
 }
+
 
 export default About
