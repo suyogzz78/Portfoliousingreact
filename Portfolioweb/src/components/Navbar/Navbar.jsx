@@ -33,7 +33,7 @@ function Navbar() {
       className={`w-full fixed top-0 left-0 z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw]
      ${
        isScrolled
-         ? "bg-[#0f172a] bg-opacity-40 backdrop-blur-md shadow-md"
+         ? "bg-[#01143a] bg-opacity-80 backdrop-blur-md shadow-md"
          : "bg-transparent"
      }`}
     >
