@@ -16,6 +16,10 @@ export default {
       animation: {
         blob: "blob 6s infinite ease-in-out",
       },
+      backgroundImage: {
+        "gradient-rainbow":
+          "linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,105,180,0.15)), linear-gradient(135deg, navy 0%, royalblue 40%, #8a2be2 70%, #ff69b4 100%)"
+      },
     },
   },
   plugins: [],
