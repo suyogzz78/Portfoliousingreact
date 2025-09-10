@@ -9,6 +9,8 @@ function Skills() {
       bg-gradient-to-r from-[#000428] via-[#0f172a] to-[#1e3a8a] lg:mt-32">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-white sm:text-4xl">SKILLS</h2>
+        <div className="mt-4 w-24 h-1 bg-blue-900 mx-auto rounded-full"></div>
+        <p className='mt-4 text-white'>These are the technologies I've worked with</p>
       </div>
     </section>
   )
