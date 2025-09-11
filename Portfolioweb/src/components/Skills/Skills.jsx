@@ -13,13 +13,21 @@ function Skills() {
         <p className='mt-4 text-white'>These are the technologies I've worked with</p>
       </div>
 
-      <div className='flex flex-wrap justify-between gap-1 lg:gap-4 py-10'>
-        {SkillsInfo.map((category)=> (<div
-        key={category.title}
-        className='bg-gray-900 backdrop-blur-md '>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 py-10">
+  {SkillsInfo.map((category) => (
+    <div
+      key={category.title}
+      className="bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8 
+      rounded-lg shadow-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
+      border border-gray-700"
+    >
+      <h3 className="text-2xl font-semibold text-white mb-4 border-b border-gray-700">
+        {category.title}
+      </h3>
+    </div>
+  ))}
+</div>
 
-          </div>))}
-        </div>
     </section>
   )
 }
