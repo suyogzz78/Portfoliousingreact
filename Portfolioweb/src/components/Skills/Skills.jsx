@@ -29,7 +29,7 @@ function Skills() {
         {category.skills.map((skill) => (
           <div
             key={skill.name}
-            className="flex items-center space-x-3 p-2 bg-transparent border-2 border-gray-700 rounded-lg hover:scale-105 transition-transform duration-300"
+            className="flex items-center space-x-3 p-3 bg-transparent border-2 border-gray-700 rounded-lg hover:scale-105 transition-transform duration-300"
           >
             <img src={skill.logo} alt={skill.name} className="w-10 h-10" />
 
