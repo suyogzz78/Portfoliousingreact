@@ -45,7 +45,7 @@ function Skills() {
                     className="w-8 h-8 mb-1 flex-shrink-0" 
                   />
 
-                  {/* Skill Name (wrap + center) */}
+                  {/* Skill Name */}
                   <span className="text-white text-xs sm:text-sm break-words leading-tight w-full">
                     {skill.name}
                   </span>
