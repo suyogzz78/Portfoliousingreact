@@ -33,14 +33,14 @@ function Skills() {
             {/* Skills with Tilt */}
             <Tilt
               className="w-full border-4 border-blue-700 rounded-lg p-4"
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
+              tiltMaxAngleX={20}
+              tiltMaxAngleY={20}
               perspective={1000}
               scale={1.02}
-              transitionSpeed={1000}
+              transitionSpeed={2000}
               gyroscope={true}
             > 
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
