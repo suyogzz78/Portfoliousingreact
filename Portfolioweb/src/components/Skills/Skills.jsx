@@ -1,5 +1,6 @@
 import React from 'react'
 import { SkillsInfo } from '../../constant'
+import Tilt from 'react-parallax-tilt';
 
 function Skills() {
   return (
@@ -29,29 +30,39 @@ function Skills() {
               {category.title}
             </h3>
 
-            {/* Individual Skills */}
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
-              {category.skills.map((skill) => (
-                <div
-                  key={skill.name}
-                  className="flex flex-col items-center justify-center text-center
-                             py-2 px-2 bg-transparent border-2 border-gray-700 
-                             rounded-lg hover:scale-105 transition-transform duration-300 min-h-[80px]"
-                >
-                  {/* Icon */}
-                  <img 
-                    src={skill.logo} 
-                    alt={skill.name} 
-                    className="w-8 h-8 mb-1 flex-shrink-0" 
-                  />
+            {/* Skills with Tilt */}
+            <Tilt
+              className="w-full border-4 border-blue-700 rounded-lg p-4"
+              tiltMaxAngleX={10}
+              tiltMaxAngleY={10}
+              perspective={1000}
+              scale={1.02}
+              transitionSpeed={1000}
+              gyroscope={true}
+            > 
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
+                {category.skills.map((skill) => (
+                  <div
+                    key={skill.name}
+                    className="flex flex-col items-center justify-center text-center
+                               py-2 px-2 bg-transparent border-2 border-gray-700 
+                               rounded-lg hover:scale-105 transition-transform duration-300 min-h-[80px]"
+                  >
+                    {/* Icon */}
+                    <img 
+                      src={skill.logo} 
+                      alt={skill.name} 
+                      className="w-8 h-8 mb-1 flex-shrink-0" 
+                    />
 
-                  {/* Skill Name */}
-                  <span className="text-white text-xs sm:text-sm break-words leading-tight w-full">
-                    {skill.name}
-                  </span>
-                </div>
-              ))}
-            </div>
+                    {/* Skill Name */}
+                    <span className="text-white text-xs sm:text-sm break-words leading-tight w-full">
+                      {skill.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </Tilt>
           </div>
         ))}
       </div>
