@@ -53,7 +53,7 @@ function Skills() {
                       alt={skill.name} 
                       className="w-6 h-6 flex-shrink-0" 
                     />
-                    
+                    //skills 
                     {/* Skill Name */}
                     <span className="text-white text-xs sm:text-sm break-words text-center">
                       {skill.name}
