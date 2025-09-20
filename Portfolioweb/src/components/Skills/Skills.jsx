@@ -42,20 +42,19 @@ function Skills() {
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="flex items-center justify-center gap-2 
-                               px-3 py-2 bg-transparent border-2 border-gray-700 
+                    className="flex flex-col items-center justify-center 
+                               px-3 py-3 bg-transparent border-2 border-gray-700 
                                rounded-lg hover:scale-105 transition-transform duration-300
-                               w-full flex-1"
+                               w-full flex-1 text-center"
                   >
                     {/* Icon */}
                     <img 
                       src={skill.logo} 
                       alt={skill.name} 
-                      className="w-6 h-6 flex-shrink-0" 
+                      className="w-8 h-8 mb-2" 
                     />
-                    //skills 
                     {/* Skill Name */}
-                    <span className="text-white text-xs sm:text-sm break-words text-center">
+                    <span className="text-white text-s sm:text-sm break-words leading-tight max-w-[80px]">
                       {skill.name}
                     </span>
                   </div>
