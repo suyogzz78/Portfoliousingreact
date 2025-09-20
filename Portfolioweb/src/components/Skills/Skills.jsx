@@ -38,14 +38,14 @@ function Skills() {
               transitionSpeed={2000}
               gyroscope={true}
             >
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 w-full">
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
                     className="flex flex-col items-center justify-center 
-                               px-3 py-3 bg-transparent border-2 border-gray-700 
+                               px-6 py-3 bg-transparent border-2 border-gray-700 
                                rounded-lg hover:scale-105 transition-transform duration-300
-                               w-full flex-1 text-center"
+                               w-full flex-1 text-center min-h-[100px]"
                   >
                     {/* Icon */}
                     <img 
@@ -54,7 +54,7 @@ function Skills() {
                       className="w-8 h-8 mb-2" 
                     />
                     {/* Skill Name */}
-                    <span className="text-white text-s sm:text-sm break-words leading-tight max-w-[80px]">
+                    <span className="text-white text-4xl sm:text-sm break-words leading-tight">
                       {skill.name}
                     </span>
                   </div>
