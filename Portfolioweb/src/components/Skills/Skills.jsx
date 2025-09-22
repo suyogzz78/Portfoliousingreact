@@ -126,7 +126,7 @@ function Skills() {
                                 bg-transparent border-2 border-gray-700 
                                 rounded-xl py-2 px-2 sm:py-2 sm:px-2 lg:px-5 lg:py-5
                                 hover:scale-105 transition-transform duration-300
-                                w-full flex-1 min-h-[70px] min-w-[89px] sm:min-h-[100px]
+                                w-full flex-1 min-h-[50px] min-w-[89px] sm:min-h-[100px]
                                 text-center"
                     >
                       <img
