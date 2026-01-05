@@ -97,7 +97,7 @@ function Skills() {
       </div>
 
       {/* Skills Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {SkillsInfo.map((category) => (
           <div
             key={category.title}
@@ -118,16 +118,16 @@ function Skills() {
               transitionSpeed={2000}
               gyroscope={true}
             >
-         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-3 w-full">
+         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3 w-full">
                       {category.skills.map((skill) => (
                       <div
-                      key={skill.name}
-                      className="flex flex-col items-center justify-center space-x-2 
+                      key={skill.name}s
+                      className="flex flex-col items-center justify-center space-x- 
                                 bg-transparent border-2 border-gray-700 
                                 rounded-xl py-2 px-2 sm:py-2 sm:px-2 lg:px-5 lg:py-5
                                 hover:scale-105 transition-transform duration-300
-                                w-full flex-1 min-h-[50px] min-w-[89px] sm:min-h-[100px]
-                                text-center"
+                                w-full flex-1 min-h-[50px] min-w-[50px] sm:min-h-[100px]
+                                text-center "
                     >
                       <img
                         src={skill.logo}
