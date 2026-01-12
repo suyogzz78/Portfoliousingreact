@@ -1,18 +1,16 @@
 import React from "react";
 import { projects } from "../../constant";
 function Project() {
-
   // so we need a usestate to handle modal open and close
 
   const [isModalOpen, setIsModalOpen] = React.useState(null);
-  const handleopenmodal=(project)=>{
-
+  const handleopenmodal = (project) => {
     setIsModalOpen(project);
-  }
+  };
 
-  const handleclosedmodal=()=>{
+  const handleclosedmodal = () => {
     setIsModalOpen(null);
-  }
+  };
   return (
     <section
       id="project"
@@ -32,14 +30,17 @@ function Project() {
         {projects.map((project) => (
           <div
             key={project.id}
-            onClick={()=>{handleopenmodal(project)}}
-            className=" border-purple-500 bg-slate-900 cursor-pointer backdrop-blur-md shadow-2xl overflow-hidden border-2 hover:shadow-purple-600 hover:translate-y-2 transition-transform duration-300 rounded-lg w-full h-full"
+            onClick={() => {
+              handleopenmodal(project);
+            }}
+            className=" border-blue-500 bg-slate-900 cursor-pointer backdrop-blur-md shadow-2xl overflow-hidden border-2 hover:shadow-blue-700 hover:translate-y-2 transition-transform duration-300 rounded-lg w-full h-full"
           >
             <div className="p-5">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"s
+                className="w-full h-48 object-cover"
+                s
               />
             </div>
             <div className="p-5">
@@ -47,17 +48,17 @@ function Project() {
                 <h3 className="text-xl font-bold mb-2 text-white">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4 pt-5 line-clamp-2">{project.description}</p>
+                <p className="text-gray-600 mb-4 pt-5 line-clamp-2">
+                  {project.description}
+                </p>
               </div>
               <div className="mt-4">
                 {project.tags.map((tags, index) => (
-                  <div className="inline-block bg-purple-900 text-white text-xs px-3 py-1 rounded-full mr-2 mb-3">
+                  <div className="inline-block bg-blue-900 text-white text-xs px-3 py-1 rounded-full mr-2 mb-3">
                     {tags}
                   </div>
                 ))}
-               
-
-                </div>
+              </div>
             </div>
           </div>
         ))}
@@ -71,20 +72,29 @@ function Project() {
           <div className="bg-slate-500 rounded-lg shadow-lg w-[90%] md:w-3/4 lg:w-1/2 p-6 relative overflow-hidden">
             <div className="flex justify-end p-4">
               <button
-              onClick={handleclosedmodal}
-               className="hover:bg-pink-600 text-white  rounded-lg font-bold size-8 ">
-                
+                onClick={handleclosedmodal}
+                className="hover:bg-pink-600 text-white  rounded-lg font-bold size-8 "
+              >
                 &times;
               </button>
-
             </div>
-
+            <div className="flex flex-col">
+              <div className=" flex justify-center bg-white">
+                <img
+                  src={isModalOpen.image}
+                  alt={isModalOpen.title}
+                  className="h-64 object-contain lg:w-full w-[97%]"
+                />
+              </div>
+              <div className="mt-4 text-white lg:p-8 p-6">
+                <h2 className="text-2xl font-bold mb-2">{isModalOpen.title}</h2>
+              </div>
+              <div className="text-white mb-6">
+                <p>{isModalOpen.description}</p>
+              </div>
+            </div>
           </div>
-
-
-
         </div>
-
       )}
     </section>
   );
