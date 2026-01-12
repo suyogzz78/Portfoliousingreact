@@ -1,6 +1,18 @@
 import React from "react";
 import { projects } from "../../constant";
 function Project() {
+
+  // so we need a usestate to handle modal open and close
+
+  const [isModalOpen, setIsModalOpen] = React.useState(null);
+  const handleopenmodal=(project)=>{
+
+    setIsModalOpen(project);
+  }
+
+  const handleclosedmodal=()=>{
+    setIsModalOpen(null);
+  }
   return (
     <section
       id="project"
@@ -20,6 +32,7 @@ function Project() {
         {projects.map((project) => (
           <div
             key={project.id}
+            onClick={()=>{handleopenmodal(project)}}
             className=" border-purple-500 bg-slate-900 cursor-pointer backdrop-blur-md shadow-2xl overflow-hidden border-2 hover:shadow-purple-600 hover:translate-y-2 transition-transform duration-300 rounded-lg w-full h-full"
           >
             <div className="p-5">
@@ -34,7 +47,7 @@ function Project() {
                 <h3 className="text-xl font-bold mb-2 text-white">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4 pt-5 line-clamp-3">{project.description}</p>
+                <p className="text-gray-600 mb-4 pt-5 line-clamp-2">{project.description}</p>
               </div>
               <div className="mt-4">
                 {project.tags.map((tags, index) => (
@@ -49,6 +62,30 @@ function Project() {
           </div>
         ))}
       </div>
+
+      {/* Modal */}
+      {/* so here is the modal is ipened we make a certain div and also a button to close it */}
+
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 ">
+          <div className="bg-slate-500 rounded-lg shadow-lg w-[90%] md:w-3/4 lg:w-1/2 p-6 relative overflow-hidden">
+            <div className="flex justify-end p-4">
+              <button
+              onClick={handleclosedmodal}
+               className="hover:bg-pink-600 text-white  rounded-lg font-bold size-8 ">
+                
+                &times;
+              </button>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      )}
     </section>
   );
 }
