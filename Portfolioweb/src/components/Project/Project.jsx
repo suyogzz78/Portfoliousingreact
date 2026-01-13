@@ -79,7 +79,7 @@ function Project() {
               </button>
             </div>
             <div className="flex flex-col">
-              <div className=" flex justify-center bg-white">
+              <div className=" flex justify-center bg-slate-500">
                 <img
                   src={isModalOpen.image}
                   alt={isModalOpen.title}
@@ -92,6 +92,20 @@ function Project() {
               <div className="text-white mb-6">
                 <p>{isModalOpen.description}</p>
               </div>
+              <div className="flex flex-wrap gap-2 mt-2 mb-6">
+                {isModalOpen.tags.map((tag,index)=>(
+                  <div key={index} className="bg-blue-900 text-white text-xs px-3 py-1 rounded-full">
+                    {tag}
+                  </div>
+                )
+              
+              )}
+
+              </div>
+              <div className="flex space-x-4">
+                <a href={isModalOpen.github} className="p-3 mt-3 bg-white text-black rounded-lg hover:translate-x-1 shadow-lg hover:bg-blue-900">Source Code </a>
+
+                </div>
             </div>
           </div>
         </div>
