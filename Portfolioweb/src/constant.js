@@ -169,43 +169,35 @@ export const SkillsInfo = [
   ];
   
   export const education = [
-    {
-      id: 0,
-      img: glaLogo,
-      school: "GLA University, Mathura",
-      date: "Sept 2022 - July 2024",
-      grade: "7.81 CGPA",
-      desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-      degree: "Master of Computer Applications - MCA",
-    },
-    {
-      id: 1,
-      img: bsaLogo,
-      school: "BSA College, Mathura",
-      date: "Sept 2018 - Aug 2021",
-      grade: "73.2%",
-      desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of Science - BSC (Computer Science)",
-    },
-    {
-      id: 2,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2017 - March 2018",
-      grade: "78%",
-      desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "CBSE(XII) - PCM with Computer Science",
-    },
-    {
-      id: 3,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2015 - March 2016",
-      grade: "87.5%",
-      desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-      degree: "CBSE(X), Science with Computer Application",
-    },
-  ];
+  {
+    id: 0,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI8N27U7GhzJUuqGgvp-lB7_h9-GoLnQ1o7w&s",
+    school: "Vedas College",
+    date: "2023 - Present",
+    grade: "Running",
+    desc: "I am currently studying in the 7th semester at Vedas College. My studies focus on computer science and information technology, where I am building strong foundations in programming, software development, databases, web technologies, and problem-solving skills.",
+    degree: "Bachelor's Degree (7th Semester – Ongoing)",
+  },
+  {
+    id: 1,
+    img: "https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-1/387845814_289256790717103_5299395123040265222_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=luKe6979xIYQ7kNvwGgsYBS&_nc_oc=AdkNXfgrhDB9HsKosYaKxXdJJT6iV8EKypPX5QCxNE-2OpLt7wCHjb4wFmSZ3naK_szv4oOyUPNGx7tTjLoZLbuX&_nc_zt=24&_nc_ht=scontent.fktm1-1.fna&_nc_gid=qwTdgyj2uJZW49wgEyDVxA&oh=00_AfoiWshcqqcoKWzPbxq_eRQY_cqDGBacn1q2YjBesoOx7g&oe=696D8C8E",
+    school: "Nightingale College",
+    date: "2077 - 2079 (B.S.)",
+    grade: "Completed",
+    desc: "I completed my +2 education from Nightingale College in the year 2079 B.S. My academic journey here strengthened my analytical thinking and prepared me for higher studies in the field of technology.",
+    degree: "+2 (Higher Secondary Education)",
+  },
+  {
+    id: 2,
+    img: "https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-1/387845814_289256790717103_5299395123040265222_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=luKe6979xIYQ7kNvwGgsYBS&_nc_oc=AdkNXfgrhDB9HsKosYaKxXdJJT6iV8EKypPX5QCxNE-2OpLt7wCHjb4wFmSZ3naK_szv4oOyUPNGx7tTjLoZLbuX&_nc_zt=24&_nc_ht=scontent.fktm1-1.fna&_nc_gid=qwTdgyj2uJZW49wgEyDVxA&oh=00_AfoiWshcqqcoKWzPbxq_eRQY_cqDGBacn1q2YjBesoOx7g&oe=696D8C8E",
+    school: "Nightingale School",
+    date: "2076 (B.S.)",
+    grade: "Completed",
+    desc: "I completed my SLC from Nightingale School in 2076 B.S. This phase laid the foundation of my academic discipline and interest in learning.",
+    degree: "SLC (School Leaving Certificate)",
+  },
+];
+
   
   export const projects = [
     {
