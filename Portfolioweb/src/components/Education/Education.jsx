@@ -27,7 +27,8 @@ const Education = () => {
             } mb-20`}
           >
             {/* Timeline dot */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 bg-gray-400 border-4 border-purple-600 w-12 h-12 rounded-full z-10">
+            
+            <div className="absolute hidden md:block left-1/2 transform -translate-x-1/2 bg-gray-400 border-4 border-purple-600 w-12 h-12 rounded-full z-10">
               <img
                 src={edu.img}
                 alt={edu.school}
@@ -36,7 +37,7 @@ const Education = () => {
             </div>
 
             {/* Card */}
-            <div className="w-full md:w-[45%] bg-gray-900 p-6 rounded-2xl shadow-lg border border-white ml-8 mr-8">
+            <div className="w-full md:w-[45%] bg-gray-900 p-6 rounded-2xl shadow-lg border border-white ml-8 mr-8 hover:scale-105 transition-transform hover:border-blue-700 hover:shadow-2xl">
               <div className="flex items-center gap-4">
                 <div className="w-20 h-14 bg-white rounded overflow-hidden">
                   <img
