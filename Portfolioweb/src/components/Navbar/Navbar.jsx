@@ -14,18 +14,22 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handlescroll);
   }, []);
 
-  const handlemenuitemclick = (e) => {
-    setActiveSection(e);
+  const handlemenuitemclick = (sectionid) => {
+    setActiveSection(sectionid);
     setIsOpen(false);
+
+    const section = document.getElementById(sectionid);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const menuitems = [
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
-    { id: "contact", label: "Contact" },
-    { id: "experience", label: "Experience" },
-    { id: "work", label: "Work" },
+    { id: "project", label: "Project" },
     { id: "education", label: "Education" },
+    { id: "contact", label: "Contact" },
   ];
 
   return (
