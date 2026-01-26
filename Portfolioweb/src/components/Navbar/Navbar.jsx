@@ -57,7 +57,7 @@ function Navbar() {
             <li
               key={item.id}
               className={`cursor-pointer hover:text-blue-400 ${
-                activesection === item.id ? "text-blue-400" : ""
+                activesection === item.id ? "text-blue-700" : ""
               }`}
             >
               <button onClick={() => handlemenuitemclick(item.id)}>
