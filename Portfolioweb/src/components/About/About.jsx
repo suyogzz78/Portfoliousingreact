@@ -11,7 +11,7 @@ function About() {
   return (
     <section
       id="about"
-      className='py-3 px-[7vw] md:px-[7vw] lg:px-[20vw] mt-10 md:mt-20 font-sans lg:mt-32'>
+      className='py-3 px-[7vw] md:px-[7vw] lg:px-[20vw] mt-10 md:mt-20 font-sans lg:mt-32 scroll-mt-60'>
         <div className='flex flex-col-reverse md:flex-row items-center justify-between'>
         <div className='md:w-1/2 text-center md:text-left mt-8 md:mt-0'>
         <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight'>
