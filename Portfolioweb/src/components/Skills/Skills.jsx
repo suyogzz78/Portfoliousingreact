@@ -121,7 +121,7 @@ function Skills() {
          <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3 w-full">
                       {category.skills.map((skill) => (
                       <div
-                      key={skill.name}s
+                      key={skill.name}
                       className="flex flex-col items-center justify-center space-x- 
                                 bg-transparent border-2 border-gray-700 
                                 rounded-xl py-2 px-2 sm:py-2 sm:px-2 lg:px-5 lg:py-5
