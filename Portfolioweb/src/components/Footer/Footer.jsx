@@ -6,7 +6,7 @@ function Footer() {
     <div className='mt-4 flex flex-col md:flex-row items-center md:justify-between px-4 md:px-16 py-4 '>
       {/* Text */}
       <p className='text-center md:text-left text-gray-400 text-sm'>
-        &copy; 2024 Your Name. All rights reserved.
+        <p>© {new Date().getFullYear()} Suyog Gautam. All rights reserved.</p>
       </p>
 
       {/* Icons */}
