@@ -5,6 +5,7 @@ import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
 import reduxLogo from './assets/tech_logo/redux.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
+import nightingaleLogo from './assets/projects/nightingale.jpg';
 
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
@@ -88,7 +89,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-1/387845814_289256790717103_5299395123040265222_n.jpg",
+    img: nightingaleLogo , 
     school: "Nightingale College",
     date: "2077 - 2079 (B.S.)",
     grade: "Completed",
@@ -97,7 +98,7 @@ export const education = [
   },
   {
     id: 2,
-    img: "https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-1/387845814_289256790717103_5299395123040265222_n.jpg",
+    img:  nightingaleLogo , 
     school: "Nightingale School",
     date: "2076 (B.S.)",
     grade: "Completed",
@@ -137,7 +138,7 @@ export const projects = [
     image: teacherLogo,
     tags: ["React JS", "HTML", "CSS"],
     github: "https://github.com/suyogzz78/Teacherwebsiteusingreact",
-    webapp: "",
+    
   },
   {
     id: 3,
@@ -146,8 +147,10 @@ export const projects = [
       "A Pinterest-inspired app for browsing and saving images with responsive UI.",
     image: pinterestLogo,
     tags: ["React JS", "JavaScript", "CSS"],
+
     github: "https://github.com/suyogzz78/pinterest_clone",
-    webapp: "",
+    
+    webapp: "https://pinterest-clone-inky.vercel.app/",
   },
   {
     id: 4,
@@ -157,6 +160,6 @@ export const projects = [
     image: weatherLogo,
     tags: ["JavaScript", "API", "HTML", "CSS"],
     github: "https://github.com/suyogzz78/Weatherforecast",
-    webapp: "",
+    
   },
 ];
